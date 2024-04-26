@@ -1,0 +1,90 @@
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+.navBar {
+  background-color: rgba(11, 11, 11, 0.773);
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  height: 4em;
+  padding: 2em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.navLinks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+.navLinks *{
+  margin-right: 30px;
+  color: aliceblue;
+}
+.navLinks *:hover{
+  color: rgb(140, 37, 236);
+}
+
+/* LIST */
+
+.list{
+  width: 9.5%;
+  background-color: rgb(48, 48, 48);
+  border-radius: 0 20px 20px 0;
+  padding: 25px;
+  margin: 20px 0;
+}
+.list h1{
+  margin: 20px 0 120px;
+}
+
+/* PRODUCTS */
+
+.products{
+  background-color: rgb(26, 25, 25);
+  border-radius: 20px;
+  width: 82%;
+  margin: 20px 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.card{
+  height: 500px;
+  width: 400px;
+  background-color: rgb(48, 48, 48);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img{
+  height: 300px;
+  border-radius: 10px;
+}
+
+.card-bottom{
+  width: 88%;
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-bottom button{
+  background-color: rgb(140, 37, 236);
+}
+
+.price{
+  font-size: 20px;
+  font-weight: bold
+}
